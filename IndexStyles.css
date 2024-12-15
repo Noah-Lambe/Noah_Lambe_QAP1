@@ -1,0 +1,227 @@
+/* Stylesheet for Index */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px auto;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "article text1"
+    "article text2"
+    "main main"
+    "footer footer";
+  grid-template-rows: 200px 80px 2fr 1fr 1fr 80px;
+  grid-template-columns: 2fr 1fr;
+  height: auto;
+  gap: 10px;
+  background-color: #e6e6e6;
+  margin: 20px auto;
+  max-width: 1000px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.item-radius {
+  border-radius: 3px;
+}
+
+header {
+  grid-area: header;
+  background-image: url(Images/badfon-chrysler-300c-kraysler.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 48px;
+  /* border: 2px solid #000; */
+  box-shadow: 2px 2px 2px #bebebe;
+}
+
+nav {
+  grid-area: nav;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  /* border: 2px solid #000; */
+  box-shadow: 2px 2px 2px #bebebe;
+  white-space: nowrap;
+}
+
+nav img {
+  margin-bottom: -10px;
+}
+
+nav a:link {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #6700b1;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+article {
+  grid-area: article;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  color: black;
+  font-size: 24px;
+  box-shadow: 2px 2px 2px #bebebe;
+  text-align: left;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+h4 {
+  text-align: center;
+  margin: 10px;
+}
+
+hr {
+  width: 60%;
+  margin: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.photo-caption {
+  padding-top: 20px;
+  margin: 10px;
+  margin-top: 0px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+}
+
+.text1 {
+  grid-area: text1;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px #bebebe;
+  padding: 10px;
+  text-align: justify;
+  display: block;
+}
+
+.text1 a {
+  color: #6700b1;
+  text-decoration: none;
+}
+
+.text1 a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.text2 {
+  grid-area: text2;
+  background-color: white;
+  background-image: url("Images/Chrysler_300_C_W.P._Chrysler_Signature_Series_LX_Bright_SIlver_Metallic_\(58\).jpg"); /* Use your image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* No repeat for background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+  box-shadow: 2px 2px 2px #bebebe;
+  width: 100%; /* Set width to full */
+  height: 100%; /* Set height to full */
+  overflow: hidden;
+}
+
+.text2 img {
+  width: 100%; /* Ensure it fills the width of the container */
+  height: 100%; /* Ensure it fills the height */
+  object-fit: cover; /* Cover the entire container */
+  display: block;
+}
+
+main {
+  grid-area: main;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+  /* border: 2px solid #000; */
+  box-shadow: 2px 2px 2px #bebebe;
+}
+
+.main-text {
+  padding: 10px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+}
+
+footer {
+  grid-area: footer;
+  box-shadow: 2px 2px 2px #bebebe;
+  background-color: #440075;
+  color: white;
+  font-size: small;
+  text-align: center;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+footer a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}

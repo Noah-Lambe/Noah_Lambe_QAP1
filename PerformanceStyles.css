@@ -1,0 +1,223 @@
+/* Stylesheet for design and performance page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px auto;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "article article"
+    "text1 main"
+    "text1 main"
+    "footer footer";
+  grid-template-rows: 200px 80px 2fr 2fr 0.5fr 80px;
+  grid-template-columns: 0.5fr 2.5fr;
+  height: auto;
+  gap: 10px;
+  background-color: #e6e6e6;
+  margin: 20px auto;
+  max-width: 1000px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+audio {
+  width: 70%;
+  border: 2px solid #440075;
+  border-radius: 3px;
+  background-color: #f4f4f4;
+}
+
+.item-radius {
+  border-radius: 3px;
+}
+
+header {
+  grid-area: header;
+  background-image: url(Images/badfon-chrysler-300c-kraysler.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 48px;
+  box-shadow: 2px 2px 2px #bebebe;
+}
+
+nav {
+  grid-area: nav;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px #bebebe;
+  white-space: nowrap;
+}
+
+nav img {
+  margin-bottom: -10px;
+}
+
+nav a:link {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #6700b1;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+article {
+  grid-area: article;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: black;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px #bebebe;
+  padding: 20px;
+  text-align: justify;
+}
+
+article h4 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+  font-size: 24px;
+}
+
+article ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+hr {
+  width: 60%;
+  margin: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.text1 {
+  grid-area: text1;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px #bebebe;
+  padding: 10px 10px 0px 10px;
+  text-align: justify;
+  display: block;
+}
+
+.text1 a {
+  color: #6700b1;
+  text-decoration: none;
+}
+
+.text1 a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+aside q {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px #bebebe;
+  padding: 10px;
+}
+
+main h4 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+  font-size: 24px;
+}
+
+.text-style {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.main-text {
+  padding: 10px;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+}
+
+footer {
+  grid-area: footer;
+  box-shadow: 2px 2px 2px #bebebe;
+  background-color: #440075;
+  color: white;
+  font-size: small;
+  text-align: center;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+footer a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
